@@ -1,15 +1,11 @@
 package com.lld.tinyurl.Model;
 
+import lombok.Data;
+
+import java.time.LocalDateTime;
+@Data
 public class UrlRequest {
-
-    public String getLongUrl() {
-        return longUrl;
-    }
-
-    public void setLongUrl(String longUrl) {
-        this.longUrl = longUrl;
-    }
-
     private String longUrl;
+    private LocalDateTime expiresAt;
 
 }
